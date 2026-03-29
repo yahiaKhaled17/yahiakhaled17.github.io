@@ -2,26 +2,54 @@
 <html>
 <head>
   <title>iPhone 13</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+
     body {
-      text-align: center;
-      font-family: Arial;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       background: #f5f5f7;
+      text-align: center;
+      margin: 0;
     }
 
     img {
-      width: 300px;
-      margin-top: 50px;
+      width: 250px;
+      margin-top: 40px;
+    }
+
+    h1 {
+      margin-top: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #0071e3;
+      font-weight: bold;
+    }
+
+    .box {
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    select {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
     }
 
     .btn {
-      padding: 10px 20px;
+      padding: 12px 25px;
       background: green;
       color: white;
       border: none;
       border-radius: 10px;
       margin-top: 20px;
+      cursor: pointer;
     }
+
   </style>
 </head>
 
@@ -30,9 +58,34 @@
 <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-01.jpg">
 
 <h1>iPhone 13</h1>
-<p>Price: 25,000 EGP</p>
+<p class="price">25,000 EGP</p>
 
-<a href="https://wa.me/201024300816">
+<div class="box">
+  <h3>Choose Storage</h3>
+  <select>
+    <option>128GB</option>
+    <option>256GB</option>
+    <option>512GB</option>
+  </select>
+
+  <h3>Choose Color</h3>
+  <select>
+    <option>Black</option>
+    <option>Blue</option>
+    <option>Red</option>
+    <option>White</option>
+  </select>
+</div>
+
+<div class="box">
+  <h3>Specifications</h3>
+  <p>Display: 6.1 inch OLED</p>
+  <p>Camera: 12MP Dual Camera</p>
+  <p>Battery: 3240mAh</p>
+  <p>Chip: A15 Bionic</p>
+</div>
+
+<a href="https://wa.me/201024300816?text=عايز%20اطلب%20iPhone%2013">
   <button class="btn">Order on WhatsApp</button>
 </a>
 
