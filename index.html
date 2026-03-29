@@ -2,33 +2,55 @@
 <html>
 <head>
   <title>Yahia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: black;
-      color: white;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
       text-align: center;
-      font-family: Arial;
-      margin-top: 100px;
     }
+
+    .container {
+      margin-top: 120px;
+    }
+
     h1 {
-      font-size: 40px;
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
+
     p {
-      color: gray;
+      font-size: 20px;
+      color: #6e6e73;
+      margin-bottom: 30px;
     }
-    button {
-      padding: 10px 20px;
-      background: white;
+
+    .btn {
+      padding: 12px 25px;
+      border-radius: 20px;
       border: none;
+      background: #0071e3;
+      color: white;
+      font-size: 16px;
       cursor: pointer;
+    }
+
+    .btn:hover {
+      opacity: 0.8;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>Yahia Khaled 🔥</h1>
-  <p>This is my first real website</p>
-  <button onclick="alert('Welcome يا نجم')">Contact me</button>
+  <div class="container">
+    <h1>Yahia Khaled</h1>
+    <p>Simple. Clean. Powerful.</p>
+    <button class="btn">Contact</button>
+  </div>
 
 </body>
 </html>
