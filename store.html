@@ -4,31 +4,58 @@
   <title>Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+
     body {
-      font-family: Arial;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       background: #f5f5f7;
       text-align: center;
-      margin: 0;
     }
 
     h1 {
-      margin: 20px;
+      margin: 40px 0;
+      font-size: 40px;
     }
 
-    .product {
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
       background: white;
-      margin: 20px;
+      width: 250px;
+      margin: 15px;
       padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
       border-radius: 15px;
     }
 
+    .card h2 {
+      margin: 10px 0;
+    }
+
+    .price {
+      color: #0071e3;
+      font-weight: bold;
+    }
+
     .btn {
+      margin-top: 10px;
       padding: 10px 20px;
+      border: none;
+      border-radius: 15px;
       background: black;
       color: white;
-      border: none;
-      border-radius: 10px;
+      cursor: pointer;
     }
+
   </style>
 </head>
 
@@ -36,22 +63,29 @@
 
 <h1>Mobile Store 📱</h1>
 
-<div class="product">
-  <h2>iPhone 13</h2>
-  <p>Price: 25,000 EGP</p>
-  <button class="btn">Buy</button>
-</div>
+<div class="products">
 
-<div class="product">
-  <h2>Samsung S22</h2>
-  <p>Price: 20,000 EGP</p>
-  <button class="btn">Buy</button>
-</div>
+  <div class="card">
+    <img src="https://via.placeholder.com/250" />
+    <h2>iPhone 13</h2>
+    <p class="price">25,000 EGP</p>
+    <button class="btn">Buy</button>
+  </div>
 
-<div class="product">
-  <h2>Xiaomi 13</h2>
-  <p>Price: 15,000 EGP</p>
-  <button class="btn">Buy</button>
+  <div class="card">
+    <img src="https://via.placeholder.com/250" />
+    <h2>Samsung S22</h2>
+    <p class="price">20,000 EGP</p>
+    <button class="btn">Buy</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/250" />
+    <h2>Xiaomi 13</h2>
+    <p class="price">15,000 EGP</p>
+    <button class="btn">Buy</button>
+  </div>
+
 </div>
 
 </body>
